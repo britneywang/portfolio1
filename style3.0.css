@@ -428,8 +428,9 @@ grid-item span {
 }
 /* project */
 .project-center {
-    background: #f9f9f7;
+    background: var(--uc-bg);
     z-index: 1;
+    height: 115vh;
 }
 .project-center-item {
     margin-bottom: 120px;
@@ -557,37 +558,54 @@ hr.solid2 {
 
 /* ------------------------------------------ FOOTER ----------------------------------------*/
 .footer {
-    /* background: var(--second-bg-color); */
+    background: var(--uc-bg);
     /* background: linear-gradient(to bottom, #2A3F45, var(--second-bg-color)); */
-    background: linear-gradient(to bottom, #F1EFE7, #c6c4a8);
-
+    /* background: linear-gradient(to bottom, #F1EFE7, #c6c4a8); */
     text-align: center;
+    height: 100px;
 }
+.footer-content {
+    font-size: var(--p-font);
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer h2 {
+    text-align: left;
+    font-size: var(--p-font);
+    font-weight: 300;
+}
+.footer-right {
+    text-align: right;
+}
+
 .social-icons-footer a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 50px;
-    background: transparent;
-    color: var(--ann-color);
-    font-size: 30px;
+    width: 30px;
+    /* color: var(--); */
+    font-size: var(--p-font);
+    font-family: "Quattrocento Sans", sans-serif;
     /* margin-right: 12px; */
-    margin-bottom: 40px;
     transition: all .6s ease;
-}
-.social-icons-footer a:hover{
-    transform: scale(1.06) rotate3d(0, 0, 1, 360deg);
     color: var(--text-color);
 }
-.horizontal-icons {
-    display: flex;
-    /* grid-template-columns: 20% 10% 10%; */
-    justify-content: center; /* Add this line */
-
-    align-items: center;
+.social-icons-footer a:hover{
+    /* transform: scale(1.06) rotate3d(0, 0, 1, 360deg); */
+    transform: scale(1.6);
+    transition: opacity 1000ms ease, transform 450ms ease, -webkit-transform 450ms ease;
 
 }
+/* .horizontal-icons {
+    display: flex;
+    justify-content: center; /* Add this line 
+    align-items: center;
+
+} */
 
 /* ------------------------------------------ ABOUT ME grid ----------------------------------------*/
 .storytelling {
@@ -696,7 +714,6 @@ hr.solid2 {
     width: 100%;
     border-radius: var(--radius);
     filter: var(--drop-shadow);
-
 }
 .uc-image img{
     width: 100%;
@@ -761,4 +778,60 @@ mark {
     width: 100vw;
     position: absolute;
 }
+/* bio */
+.bio {
+    background: var(--uc-bg);
+    /* padding: 110px 20%; */
+    height: 100vh;
+    text-align: center;
+}
+.bio-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    float: left;
+    margin-top: 32px;
+
+}
+.bio-text {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+
+}
+.bio-image {
+    /* background-color: blue; */
+}
+
+.bio-image img {
+    height: 100%;
+    width: 80%;
+    border-radius: var(--radius);
+    filter: var(--drop-shadow);
+}
+.button-resume {
+    background-color: var(--accent-color); /* Green */
+  border: none;
+  color: var(--text-color);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: var(--radius);
+  /* filter: var(--drop-shadow); */
+ 
+}
+/* .button-resume a:hover{
+  
+  transform: scale(1.6);
+transition: opacity 1000ms ease, transform 450ms ease, -webkit-transform 450ms ease;
+
+} */
+
+
 
