@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Britney Wang's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+
+        <!-- box icons link -->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!-- remix icons link -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet"/>
+
+        <!-- google fonts link -->
+        <link rel="preconnect" href="https:fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400"..800&display="swap"
+        rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+        <!---------------------------------------- NAV BAR -------------------------------------->
+            <a href="#" class="logo"><img src="img/b-logo.png"></a>            
+
+             <ul class="menulist" >
+                <a href="portfolio.html">portfolio</a>
+                <a href="me.html" class="bold-tab">me</a>
+                <a href="me2.html">me2</a>
+
+             </ul>
+        </header>
+    
+        <!---------------------------------------- COVER ---------------------------------------->
+        <!-- <section class="home" id="home">
+            <video autoplay muted loop id="myVideo">
+                <source src="img/cover-blue-water.mp4" type="video/mp4">
+              </video>
+
+            <div class="home-text">
+                <h1>UI / UX and <br> <span>Web Designer</span></h1>
+                <h4>With 5+ years of experience</h4>
+
+                <audio controls autoplay id="water">
+                    <source src="audio/water.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section> -->
+
+        <!---------------------------------------------------------- ABOUT ---------------------------------------------------------->
+        <section class="about" id="about">
+            <div class="about-img">
+                <!-- ADD IMAGE -->
+                <iframe id="youtube" width="315" height="560" src="https://www.youtube.com/embed/naH2nQCJwWM?controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="about-text">
+
+                <h2>hi, i'm <span>britney </span>!</h2>
+            
+                <p>I wonder if I've been changed in the night? Let me think. Was
+                    I the same when I got up this morning? I almost think I can
+                    remember.
+
+                <!-- resume -->
+                <a href="file:///Users/britneywang/Downloads/CsvApp-2/Professional/General/Resume/Research%20Resume%20(NSF%20REU).pdf">resume</a></p>
+
+
+                <!-- skills, exp, edu -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('education')">education</p>
+                </div>
+    
+                <!-- SKILLS -->
+                <div class="tab-contents active-tab" id="skills">
+
+                    <!-- #1 -->
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="img/skills-figma.png">
+                        </div>
+                        <div class="grid-item">
+                            <span>software name</span><br>description</li>
+                        </div>
+                    </div>
+
+                    <!-- #2 -->    
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="img/skills-figma.png">
+                        </div>
+                        <div class="grid-item">
+                            <span>figma</span><br>Designing Web/APP Interfaces</li>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXP -->
+                <div class="tab-contents" id="experience">
+                    <!-- #1 -->
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="img/edu-psu.png">
+                        </div>
+                        <div class="grid-item">
+                            <div class="exp-edu-top-line">
+                                <div class="left-text"><span>diplomat @ college of information science technology (penn state)</span></div>
+                                <div class="right-text"><span>date</span></div>
+                            </div>
+                            role description
+                        </div>
+                    </div>
+                    <!-- #2 -->
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="img/exp-umichflint.png">
+                        </div>
+                        <div class="grid-item">
+                            <div class="exp-edu-top-line">
+                                <div class="left-text"><span>research scientists @ uni of mich (flint, mi)</span></div>
+                                <div class="right-text"><span>06/22-08/22</span></div>
+                            </div>
+                            role description
+                        </div>
+                    </div>
+                    <!-- #2 -->
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="img/exp-sase.png">
+                        </div>
+                        <div class="grid-item">
+                            <div class="exp-edu-top-line">
+                                <div class="left-text"><span>conference director @ society of asian scientists & engineers (sase)</span></div>
+                                <div class="right-text"><span>06/22-08/22</span></div>
+                            </div>
+                            role description
+                        </div>
+                    </div>
+                    
+                    <!-- #2 -->
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="img/exp-breakawave.png">
+                        </div>
+                        <div class="grid-item">
+                            <div class="exp-edu-top-line">
+                                <div class="left-text"><span>business concierge @ breakawave</span></div>
+                                <div class="right-text"><span>06/22-08/22</span></div>
+                            </div>
+                            role description
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EDU -->
+                <div class="tab-contents" id="education">
+                    <!-- #1 -->
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="img/edu-psu.png">
+                        </div>
+                        <div class="grid-item">
+                            <div class="exp-edu-top-line">
+                                <div class="left-text"><span>bachelor's @ penn state uni (university park, pa)</span></div>
+                                <div class="right-text"><span>date</span></div>
+                            </div>
+                            role description
+                        </div>
+                    </div>
+                    
+                    <!-- #2 -->
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <img src="img/edu-sashs.png">
+                        </div>
+                        <div class="grid-item">
+                            <div class="exp-edu-top-line">
+                                <div class="left-text"><span>hs diploma @ shippensburg senior high school</span></div>
+                                <div class="right-text"><span>06/22-08/22</span></div>
+                            </div>
+                            role description
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!---------------------------------------------------------- VALUES ---------------------------------------------------------->
+        <section class="about-values " id="about-values">
+            <h1>let's chat about...</h1><br><br>
+            <h2>item 1 - self growth 1% better</h2><br><br>
+            <h2>item 2 - community, give back, support system</h2><br><br>
+            <h2>item 3 - do what makes you happy</h2><br><br>
+            <h2>item 4</h2><br><br>
+
+         
+        </section>
+
+    <!---------------------------------------------------------- PASSIONS ---------------------------------------------------------->
+        <section class="about-passions " id="about-passions">
+            <h1>how i spend my free time</h1><br><br>
+
+            <div class="passion-grid">
+                
+                <div class="passion-item">
+                    <a href="food.html">
+                        <img src="img/au-bondi.jpg">
+                    </a>
+                </div>
+
+                <div class="passion-item">
+                    <a href="wellness.html">
+                        <img src="img/au-bondi.jpg">
+                    </a>                
+                </div>
+            </div>
+
+         
+        </section>
+
+    <!---------------------------------------------------------- EXPERIENCES ---------------------------------------------------------->
+    <!-- <section class="portfolio" id="portfolio">
+        <div class="mid-text">                
+            <h2><span>seasons</span> of my <span>life</span></h2>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="row2">
+                <div class="row-img2">
+                    <img src="img/hs-grad.jpg">
+                    <div class="overlay">
+                        <div class="row2-text">psfa - asian community</div>
+                      </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row-img2">
+                    <img src="img/psu-friends.jpg">
+                    <div class="overlay">
+                        <div class="row2-text">psfa - mentor</div>
+                      </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row-img2">
+                    <img src="img/psfa-freshman.jpg">
+                    <div class="overlay">
+                        <div class="row2-text">psfa - volunteer</div>
+                      </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row-img2">
+                    <img src="img/au-jonny.jpg">
+                    <div class="overlay">
+                        <div class="row2-text">psfa - volunteer</div>
+                      </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row-img2">
+                    <img src="img/au-bondi.jpg">
+                    <div class="overlay">
+                        <div class="row2-text">psfa - volunteer</div>
+                      </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row-img2">
+                    <img src="img/tastewithbrit.jpg">
+                    <div class="overlay">
+                        <div class="row2-text">psfa - volunteer</div>
+                      </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row-img2">
+                    <img src="img/soph-queenmcd.jpg">
+                    <div class="overlay">
+                        <div class="row2-text">psfa - volunteer</div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+         <!---------------------------------------------------------- FOOTER ---------------------------------------------------------->
+         <section class="footer" id="footer">
+            
+            <h2> got a project? <span>let's talk</span></h2>
+       
+            <!-- socials -->
+            <div class="horizontal-icons">
+                <div class="social-icons-footer">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </div>
+                <div class="social-icons-footer">
+                    <a href="#"><i class="ri-linkedin-box-line"></i></a>
+                </div>
+                <div class="social-icons-footer" id="icon-mail">
+                    <a href="#"><i class="ri-mail-line"></i></a>
+                </div>
+            </div>
+
+            <!-- trademark -->
+            <div class="footer-text">
+                <p>designed by britney wang ❥</p>
+            </div>
+        </section>
+    </body>
+
+    <!-- js file -->
+    <script src="script2.js"></script>
+
+</html>
