@@ -36,5 +36,7 @@ function isInViewport(element) {
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
- 
-  
+  window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header'); // Replace '.header' with the class name of your header
+    header.classList.toggle('scrolled', window.scrollY > 0);
+});

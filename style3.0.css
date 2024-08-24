@@ -29,6 +29,13 @@
     --drop-shadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
     --white-color: #fefefe;
 
+    /* home */
+    --home-font: "Playfair Display", serif;
+    --home-font-weight: 300;
+    --home-font-size: 55px;
+    --home-font-drop-shadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
+
+
 
 
 
@@ -96,10 +103,13 @@ header {
     align-items: center;
     justify-content: space-between;
     transition: all .6s ease;
-    filter: var(--drop-shadow);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+    /* filter: var(--drop-shadow); */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    */
 }
-
+.header.scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    filter: var(--drop-shadow);
+}
 .logo {
     display:inline-block;
     font-size: 20px;
@@ -124,6 +134,7 @@ header {
 .menulist a.active {
     color: var(--text-color);
 }
+
 /* -------------------------------------------------------- COVER -------------------------------------------------------- */
 .home{
     height: calc(81vh);
@@ -135,34 +146,29 @@ header {
     align-items: center;
     justify-content: flex-start;
     z-index: -10;
+    /* filter: brightness(0.8); */
 
 }
 .home-text h1{
     margin: 20px 0;
     font-size: var(--h1-font);
 }
-.home-text h1 span{
+/* .home-text h1 span{
     background: -webkit-linear-gradient(135deg, #e1bac5 0%, var(--main-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.home-text h4{
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 35px;
-}
+} */
 .home-text h5{
     margin: 20px 0;
-    font-size: 3.5rem;
-    font-family: var(--title-font);
-    font-weight: var(--title-font-weight);
-
-
-
+    font-size: var(--home-font-size);
+    font-family: var(--home-font);
+    font-weight: var(--home-font-weight);
+    color: var(--text-color);
 }
 .home-text p{
     margin: 20px 0;
     font-size: var(--small-print);
+    color: var(--text-color);
 }
 .home-text p span{
     margin: 20px 0;
@@ -210,9 +216,9 @@ header {
     display: flex;
     justify-content: center;
 }
-.ri-arrow-down-wide-line {
+/* .ri-arrow-down-wide-line {
     padding-top: 120px;
-    font-size: 30px; /* adjust as needed */
+    font-size: 30px; 
     z-index: 1;
     animation: bounce 2s infinite;
     cursor: pointer;
@@ -227,7 +233,7 @@ header {
     60% {
         transform: translateY(-7px);
     }
-}
+} */
 /* -------------------------------------------------------- ABOUT ME ----------------------------------------------------------------------------------*/
 .about {
     background: var(--second-bg-color);
@@ -430,7 +436,19 @@ grid-item span {
 .project-center {
     background: var(--uc-bg);
     z-index: 1;
-    height: 115vh;
+    height: 145vh;
+}
+.project-center h1{
+    font-size: var(--uc-h1);
+    font-family: var(--title-font);
+    font-weight: lighter;
+    margin: 10px;
+    /* font-style: italic; */
+}
+.project-center p{
+
+    margin: 10px;
+    /* font-style: italic; */
 }
 .project-center-item {
     margin-bottom: 120px;
@@ -439,12 +457,15 @@ grid-item span {
     height: 350px;
     width: 100%;
     border-radius: var(--radius);
+    
+
 }
 
 .project-center-item img{
     height: 350px;
     width: 100%;
     border-radius: var(--radius);
+    object-fit: cover;
     
 }
 .project-center-item h1 {
@@ -488,71 +509,19 @@ hr.solid2 {
     left: 40%;
     z-index: 1000;
 }
-
-
 .project-center-item:hover {
-    transform: scale(1.07);
-    cursor: pointer;
+    transform: scale(1.06);
+    transition: opacity 1000ms ease, transform 450ms ease, -webkit-transform 450ms ease;
 }
 .project-thumbnail {
     display: flex;
     flex-direction: column;
 }
-
-
-/* wellness page */
-.wellness {
-    padding: 110px 20%;
-    text-align: center;
-    background: linear-gradient(to bottom, #89A1A6, #c6c4a8);
-}
-.wellness p {
-    font-size: small;
-}
-.row {
-    display: -ms-flexbox; /* IE10 */
+.hobbies-container {
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 10px;
-    background: linear-gradient(to bottom, #89A1A6, #c6c4a8);
-    /* background-color: white; */
+    justify-content: space-between;
+}
 
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 10px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add this line */
-    /* border-radius: var(--radius); */
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
 
 
 
@@ -655,7 +624,7 @@ hr.solid2 {
 /* ------------------------------------------ use case ----------------------------------------*/
 .use-case {
     background: var(--uc-bg);
-    height: 1100vh;
+    height: 970vh;
 }
 .column-left {
     width: 25%;
@@ -693,13 +662,14 @@ hr.solid2 {
     text-decoration: overline;
     text-decoration-color: var(--accent-color);
     text-decoration-thickness: 4px;
+    font-style: italic;
 }
 .row h4 {
     font-size: var(--uc-h1);
     font-family: var(--title-font);
     font-weight: var(--title-font-weight);
     margin-top: 15px;
-
+    font-style: italic;
 }
 .row h2 {
     font-size: var(--uc-h2);
@@ -782,18 +752,18 @@ mark {
 .bio {
     background: var(--uc-bg);
     /* padding: 110px 20%; */
-    height: 100vh;
+    height: 85vh;
     text-align: center;
 }
 .bio-content {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     text-align: left;
     float: left;
     margin-top: 32px;
-
+    height: 450px;
 }
 .bio-text {
     /* background-color: red; */
@@ -801,10 +771,36 @@ mark {
     height: 100%;
 
 }
-.bio-image {
-    /* background-color: blue; */
+.bio-text h1{
+    font-size: var(--uc-h1);
+    font-family: var(--title-font);
+    font-weight: lighter;
+    margin-top: 15px;
+    font-style: italic;
 }
+.bio-text h2{
+    font-size: 20px;
+    font-family: var(--body-font);
+    font-weight: bolder;
+    margin-top: 15px;
+    /* background-color: var(--accent-color);
+    color: var(--text-color); */
+}
+.bio-text p {
+    line-height: 32px;
+}
+/* .bio-text i {
+    font-size: var(--uc-h2);
+    font-family: var(--title-font);
+    font-weight: var(--title-font-weight);
+    margin-top: 15px;
+    font-style: bold;
 
+} */
+
+/* .bio-image {
+    height: 500px;
+} */
 .bio-image img {
     height: 100%;
     width: 80%;
@@ -812,9 +808,10 @@ mark {
     filter: var(--drop-shadow);
 }
 .button-resume {
-    background-color: var(--accent-color); /* Green */
-  border: none;
-  color: var(--text-color);
+/* background-color: var(--accent-color); Green */
+  /* border: 1px solid var(--text-color);  */
+  color: var(--white-color);
+  background-color: var(--text-color);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -823,9 +820,21 @@ mark {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: var(--radius);
+
   /* filter: var(--drop-shadow); */
  
 }
+.button-resume:hover {
+
+    transition: opacity 1000ms ease, transform 450ms ease, -webkit-transform 450ms ease;
+    transform: scale(1.11);
+ 
+
+}
+/* .button-resume:hover {
+    background-color: var(--text-color);
+    color: white;
+  } */
 /* .button-resume a:hover{
   
   transform: scale(1.6);
@@ -833,5 +842,94 @@ transition: opacity 1000ms ease, transform 450ms ease, -webkit-transform 450ms e
 
 } */
 
+/* ------------------------------------------ GALLERY ----------------------------------------*/
+/* hobbies */
+.hobbies {
+    display: flex;
+    /* justify-content: center;
+    align-items: flex-start; */
+    flex-wrap: wrap;
+    background-color: var(--uc-bg);
+}
+.hobbies h1 {
+    font-size: var(--uc-h1);
+    font-family: var(--title-font);
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-style: italic;
+    text-align: left;
 
+}
+.hobbies p {
+    margin-left: 20px;
+
+}
+.a
+div.gallery {
+    margin: 15px 15px;    
+    float: left;
+    width: 30%;
+}
+div.gallery img {
+    width: 100%;
+    height: 300px;
+    border-radius: var(--radius);
+    filter: var(--drop-shadow);
+    object-fit: cover;
+}
+/* div.desc {
+    padding: 0px;
+    text-align: left;
+  } */
+
+  .row {
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    background: var(--uc-bg);
+    height: 175vh;
+
+  }
+  
+  .column {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 10px;
+  }
+.column p {
+    text-align: center;
+    font-size: var(--h2-font);
+}
+  
+  .column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: var(--radius);
+    filter: var(--drop-shadow);
+    height: 400;
+    object-fit: cover;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 
