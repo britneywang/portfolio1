@@ -94,3 +94,38 @@ const observer3 = new IntersectionObserver((entries, observer3) => {
 
 // Start observing the video element
 observer3.observe(video3);
+
+
+
+
+
+
+/// --
+// Select all the section and links
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.sidenav a');
+
+// Function to detect which section is in view and add/remove the active class
+function checkSectionInView() {
+    let index = sections.length;
+
+    // Loop through the sections and find the currently visible section
+    while (--index && window.scrollY + window.innerHeight / 2 < sections[index].offsetTop) {}
+
+    // Remove the 'active' class from all links
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        link.style.fontSize = '18px'; // Reset font size when inactive
+    });
+
+    // Add 'active' class to the link of the currently visible section
+    const activeLink = navLinks[index];
+    activeLink.classList.add('active');
+    activeLink.style.fontSize = '24px'; // Apply the larger font size for active section
+}
+
+// Listen for scroll events
+window.addEventListener('scroll', checkSectionInView);
+
+// Initial check to set the active class based on the initial section in view
+document.addEventListener('DOMContentLoaded', checkSectionInView);
