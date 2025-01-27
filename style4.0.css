@@ -41,6 +41,9 @@ html {
     --bold-weight: 700;
     --side-fontsize: 14px;
 
+    /* PROJECT2 */
+    --color3:#2D6A4F;
+
     /* SPECIFICS */
     --overview-gap: 100px;
     --b-margin-bottom: 5px;
@@ -91,6 +94,7 @@ section img {
     height: 100%;
     /* border-radius: var(--border-radius); */
 }
+
 /* Styling for the images */
 .aligned-image {
     width: 70%; /* Make the images responsive */
@@ -528,6 +532,19 @@ div.polaroid-text {
     cursor: pointer;
     font-family: var(--p-fontfamily);
   }
+.button2 {
+    background-color: var(--color3);
+    color: var(--color1);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--body-fontsize);
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: var(--p-fontfamily);
+}
 
 .po-description {
     height: auto;
@@ -668,6 +685,23 @@ mark {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--grid2-gaps);
+}
+.grid-3-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: var(--grid2-gaps); */
+}
+.grid-3-image img {
+    height: 100%;
+}
+.grid-2-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: var(--grid2-gaps); */
+}
+.grid-2-image img {
+    height: 90%;
+    width: 90%;
 }
 
 .column-text {
