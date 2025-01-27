@@ -539,6 +539,7 @@ div.polaroid-text {
     margin: 4px 2px;
     cursor: pointer;
     font-family: var(--p-fontfamily);
+    border-radius: 40px;
   }
 .button2 {
     background-color: var(--color3);
@@ -552,6 +553,8 @@ div.polaroid-text {
     margin: 4px 2px;
     cursor: pointer;
     font-family: var(--p-fontfamily);
+    border-radius: 40px;
+
 }
 
 .po-description {
