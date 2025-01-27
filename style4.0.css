@@ -340,6 +340,14 @@ header {
 #testimonials img {
     width: 50%;
 }
+/* .about-grid2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* gap: var(--grid2-gaps); 
+}
+.about-grid2 img {
+    width: 100%;
+} */
 
 /* ---------------------------------------------------------- LANDING PAGE ----------------------------------------------------------  */
 
