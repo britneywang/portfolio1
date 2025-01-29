@@ -44,6 +44,9 @@ html {
     /* PROJECT2 */
     --color3:#2D6A4F;
 
+    /* PROJECT3 */
+    --color4: #F2ECD3;
+
     /* SPECIFICS */
     --overview-gap: 100px;
     --b-margin-bottom: 5px;
@@ -563,6 +566,12 @@ div.polaroid-text {
 .use-case1 {
     height: auto;
     background-color: var(--color1);
+    margin-bottom: var(--h1-margin-bottom);
+}
+
+.use-case3 {
+    height: auto;
+    background-color: var(--color4);
     margin-bottom: var(--h1-margin-bottom);
 }
 
